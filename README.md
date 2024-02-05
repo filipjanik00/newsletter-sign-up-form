@@ -23,8 +23,8 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 
 ### Links
 
-- Solution URL: [Frontend Mentor IO Solution](https://www.frontendmentor.io/solutions/stats-preview-card-component-4thGx7DsIJ)
-- Live Site URL: [Hosted on GitHub Pages](https://filipjanik00.github.io/stats-preview-card-component-main/)
+- Solution URL: [Frontend Mentor IO Solution](https://www.frontendmentor.io/solutions/newsletter-sign-up-form-using-tailwind-css-CiKJE-aNpw)
+- Live Site URL: [Hosted on GitHub Pages](https://filipjanik00.github.io/newsletter-sign-up-form/)
 
 ## My process
 
