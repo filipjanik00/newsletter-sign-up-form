@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body
+    class="font-main text-[1rem] min-h-screen text-darkSlateGrey flex items-center justify-center md:bg-charcoalGrey"
+  >
+    <main>
+      <!-- Card -->
+      <div
+        class="card grid grid-cols-1 bg-white max-w-[375px] md:grid-cols-2 items-center md:max-w-[840px] md:rounded-[2rem] md:text-sm md:shadow-xl animate__animated animate__fadeInLeft"
+      >
+        <!-- Text Content -->
+        <div class="p-6 md:ml-8">
+          <h1 class="text-4xl font-bold mt-2 md:mt-0 md:text-5xl">
+            Stay updated!
+          </h1>
+          <p class="my-5">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+          <!-- List Items -->
+          <div class="space-y-3 md:space-y-2">
+            <div class="flex items-center gap-4">
+              <img
+                src="./assets/images/icon-list.svg"
+                alt=""
+                class="self-start"
+              />
+              <p>Product discovery and building what matters</p>
+            </div>
+            <div class="flex items-stretch gap-4">
+              <img
+                src="./assets/images/icon-list.svg"
+                alt=""
+                class="self-start"
+              />
+              <p>Measuring to ensure updates are a success</p>
+            </div>
+            <div class="flex items-stretch gap-4">
+              <img
+                src="./assets/images/icon-list.svg"
+                alt=""
+                class="self-start"
+              />
+              <p>And much more!</p>
+            </div>
+          </div>
+          <div
+            class="mt-10 flex justify-between items-center font-bold text-xs"
+          >
+            <p class="text-charcoalGrey">Email address</p>
+            <small class="hidden text-tomato">Valid email required</small>
+          </div>
+          <!-- Form -->
+          <form id="form" class="flex flex-col mt-2">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="email@company.com"
+              class="p-4 border-[1px] border-solid border-gray-300 rounded-lg focus:outline-none focus:border-darkSlateGrey transition"
+            />
+            <button
+              class="btn btn-desktop mt-4 bg-darkSlateGrey p-4 text-white font-bold rounded-lg"
+            >
+              Subscribe to monthly newsletter
+            </button>
+          </form>
+        </div>
+        <!-- Image -->
+        <picture class="-order-1 md:order-1 md:p-5">
+          <source
+            srcset="./assets/images/illustration-sign-up-desktop.svg"
+            media="(min-width:768px)"
+          />
+          <img src="./assets/images/illustration-sign-up-mobile.svg" alt="" />
+        </picture>
+      </div>
+
+      <!-- Mobile Success Content -->
+      <!-- Container -->
+      <div
+        class="mobile-success hidden text-darkSlateGrey mobile-success h-screen flex-col justify-center animate__animated animate__pulse"
+      >
+        <!-- Text Content -->
+        <div class="p-6">
+          <img src="./assets/images/icon-success.svg" alt="" />
+          <h2 class="my-5 text-4xl font-bold">Thanks for subscribing!</h2>
+          <p>
+            A confirmation email has been sent to
+            <span class="user-email-mobile font-bold"></span>
+            Please open it and click the button inside to confirm your
+            subscription.
+          </p>
+          <button
+            class="btn-dismiss-mobile mt-48 w-full bg-darkSlateGrey p-4 text-white font-bold rounded-lg"
+          >
+            Dismiss message
+          </button>
+        </div>
+      </div>
+
+      <!-- Desktop Success Content -->
+      <!-- Container -->
+      <div
+        class="desktop-success hidden bg-white w-[500px] h-[500px] p-14 rounded-[2rem] flex-col animate__animated animate__pulse"
+      >
+        <!-- Text Content -->
+        <div class="">
+          <img src="./assets/images/icon-success.svg" alt="Success Icon" />
+          <h2 class="my-6 text-5xl font-bold">Thanks for subscribing!</h2>
+          <p class="max-w-[24rem]">
+            A confirmation email has been sent to
+            <span class="user-email-desktop font-bold"
+              >example@hotmail.com</span
+            >
+            Please open it and click the button inside to confirm your
+            subscription.
+          </p>
+        </div>
+        <div class="">
+          <button
+            class="btn-dismiss-desktop mt-12 w-full bg-darkSlateGrey p-4 text-white font-bold rounded-lg"
+          >
+            Dismiss message
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
